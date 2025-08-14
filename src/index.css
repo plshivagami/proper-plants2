@@ -1,0 +1,122 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1rem;
+}
+.plant-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 200%;
+  gap: 1rem;
+}
+
+.cart {
+  flex: 0.3;
+  border-left: 1px solid #ddd;
+  padding-left: 1rem;
+  background-color: #f9f9f9;
+  margin-top: 8%;
+}
+.plant-item {
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  margin: 2%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes name and button apart */
+  align-items: center;
+  background-color: #fafafa;
+  gap: 0.75rem;
+  height: 80%;
+}
+
+.plant-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.plant-image {
+  width: 100px;
+  height: 100px;
+  font-size: 4rem;
+}
+.plant-item button {
+  width: 100%;
+  padding: 0.5rem;
+}
+.cart h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.toCart {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toCart li {
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgb(233, 229, 229);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.toCart button {
+  margin-left: 5px;
+  padding: 5px 1px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+}
+
+.toCart button:first-of-type {
+  background-color: #f44336;
+}
+
+.toCart button:hover {
+  opacity: 0.85;
+}
+
+.toCart li span {
+  flex-grow: 1;
+  margin-left: 8px;
+}
+.qty {
+  margin: 0 8px;
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+  padding: 1% 15%;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+@media (max-width: 768px) {
+  .plant-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5%;
+  }
+  .cart {
+    flex-direction: column;
+  }
+}
+body {
+  background-color: #cbe4ef;
+}
